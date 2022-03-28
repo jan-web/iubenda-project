@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>iubenda</title>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="apple-touch-icon" href="images/touch-icon-iphone.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<img class="header__logo" src="./images/logo.svg" alt="iubenda-logo" />
+		</header>
+		<div class="container container_info-rating">
+			<div class="wrapper">
+				<section class="info-rating">
+					<div class="row info-rating__row">
+						<div class="info-rating__info col">
+							<div class="info-rating__img">
+								<img src="./images/monitor.svg" alt="icon-monitor" />
+							</div>
+							<div class="info-rating__doc">
+								<div class="info-rating__domain">www.domain.com</div>
+								<div class="info-rating__descr">Account & Billing info</div>
+							</div>
+						</div>
+						<div class="info-rating__rating col">
+							<span class="info-rating__rating-descr"
+								>Your current compliance rating</span
+							>
+							<div class="progress" id="container"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="container">
+			<div class="wrapper">
+				<div class="sections-wrapper">
+					<section class="options row">
+						<div class="options__tick-box col">
+							<img
+								src="./images/check.svg"
+								alt="icon_checkmark"
+								class="options__tick"
+							/>
+						</div>
+						<div class="options__descr col">
+							Your website has been created and your legal documents have been
+							generated. Setup your cookie banner and privacy policy button to
+							complete the integration.
+							<button type="button" class="close">
+								<span>×</span>
+							</button>
+						</div>
+					</section>
+					<section class="addbanner">
+						<input class="tgl tgl-light" id="cb1" type="checkbox" />
+						<label class="tgl-btn" for="cb1"></label>
+						<span class="addbanner__ckbx-descr">Add a cookie banner</span>
+					</section>
+					<section class="design row">
+						<div class="design__position col">
+							<div class="title">Position</div>
+							<select
+								class="tech"
+								name="tech"
+								is="ms-dropdown"
+								data-enable-checkbox="false"
+							>
+								<option
+									selected
+									data-image="./images/position_top.jpg"
+									value="email"
+								></option>
+								<option
+									data-image="./images/position_bottom.jpg"
+									value="faq"
+								></option>
+							</select>
+						</div>
+						<div class="design__theme col">
+							<div class="title">Theme</div>
+							<div class="design__thems">
+								<div class="design__theme-card">
+									<button class="design__img-wrapper">
+										<img
+											src="./images/fake_banner_dark.png"
+											alt="dark-theme"
+											class="design__theme-img"
+										/>
+									</button>
+									<div class="design__theme-descr">Dark</div>
+								</div>
+								<div class="design__theme-card">
+									<button class="design__img-wrapper">
+										<img
+											src="./images/fake_banner_light.png"
+											alt="light-theme"
+											class="design__theme-img"
+										/>
+									</button>
+									<div class="design__theme-descr">Light</div>
+								</div>
+								<div class="design__theme-card">
+									<button class="design__add-custom">+</button>
+									<div class="design__theme-descr">Custom style</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="legislation">
+						<div class="title">Legislation</div>
+						<button class="legislation__button">GDPR Only</button>
+						<button class="legislation__button">CCPA Only</button>
+						<button class="legislation__button">Both</button>
+						<div class="title legislation__from">Require consent from</div>
+						<button
+							class="legislation__button legislation__button_eu legislation__button_require"
+						>
+							EU Only
+						</button>
+						<button
+							class="legislation__button legislation__button_ww legislation__button_require"
+						>
+							World Wide
+						</button>
+					</section>
+					<section class="chkboxies">
+						<div class="title">Banner buttons</div>
+						<div class="chkboxies__wrapper">
+							<input
+								id="explit_accept_and_cusomize_buttons"
+								class="align-middle d-inline-block"
+								type="checkbox"
+							/>
+							<span class="chkboxies__descr"
+								>Explit Accept and Cusomize buttons</span
+							>
+						</div>
+						<div class="chkboxies__wrapper">
+							<input
+								id="explit_reject_button"
+								class="align-middle d-inline-block"
+								type="checkbox"
+							/>
+							<span class="chkboxies__descr">Explit Reject button</span>
+						</div>
+						<div class="title chkboxies__overoptions-title">Other options</div>
+
+						<div class="chkboxies__wrapper">
+							<input
+								id="enable_iab_ransparency"
+								class="align-middle d-inline-block"
+								type="checkbox"
+							/>
+							<span class="chkboxies__descr"
+								>Enable IAB Transparency and Consent Framework -
+								<a href="#" class="chkboxies__learn-more">Learn more</a></span
+							>
+						</div>
+						<div class="chkboxies__tooltip">
+							<span class="chkboxies__tooltip-descr"
+								>You may should activate this feature if you show ads on your
+								website</span
+							>
+						</div>
+						<div class="chkboxies__wrapper">
+							<input
+								id="enable_google_amp_support"
+								class="align-middle d-inline-block"
+								type="checkbox"
+							/>
+							<span class="chkboxies__descr">Enable Google AMP support </span
+							><a href="#"
+								><img src="./images/question.svg" alt="question-mark"
+							/></a>
+						</div>
+						<div class="chkboxies__wrapper">
+							<input
+								id="automatically_block_scripts"
+								class="align-middle d-inline-block"
+								type="checkbox"
+							/>
+							<span class="chkboxies__descr"
+								>Automatically block scripts detected by the plugin </span
+							><a href="#"
+								><img src="./images/question.svg" alt="question-mark"
+							/></a>
+						</div>
+					</section>
+					<section class="addprivacy">
+						<input class="tgl tgl-light" id="cb2" type="checkbox" />
+						<label class="tgl-btn" for="cb2"></label>
+						<span class="addprivacy__ckbx-descr"
+							>Add the privacy policy button</span
+						>
+					</section>
+					<section class="buttonsstyle">
+						<div class="title">Button style</div>
+						<div class="buttonsstyle__thems">
+							<div class="buttonsstyle__theme-card">
+								<button class="buttonsstyle__img-wrapper">
+									<img
+										src="./images/fake_button_light.png"
+										alt="light"
+										class="buttonsstyle__theme-img"
+									/>
+								</button>
+								<div class="buttonsstyle__theme-descr">light</div>
+							</div>
+							<div class="buttonsstyle__theme-card">
+								<button class="buttonsstyle__img-wrapper">
+									<img
+										src="./images/fake_button_dark.png"
+										alt="dark"
+										class="buttonsstyle__theme-img"
+									/>
+								</button>
+								<div class="buttonsstyle__theme-descr">Dark</div>
+							</div>
+						</div>
+						<div class="title buttonsstyle__but-position">Button position</div>
+
+						<ul class="list-unstyled">
+							<li>
+								<input
+									type="radio"
+									name="gdpr_billing_type"
+									id="automatically"
+									value="enabled"
+								/>
+								<label id="ppl_switch_label" for="automatically">Put automatically button on footer</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									name="gdpr_billing_type"
+									id="manually"
+									value="manually"
+									checked="checked"
+								/>
+								<label id="ppl_switch_label" for="manually"
+									>Integrate button manually</label
+								>
+							</li>
+						</ul>
+
+
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="container container_reset-settings">
+			<div class="wrapper">
+				<section class="reset-settings">
+					<div class="row reset-settings__row">
+						<div class="reset-settings__info col">
+							<div class="reset-settings__title">
+								Reset settings
+							</div>
+						</div>
+						<div class="reset-settings__button-wrapper col">
+							<button type="button" class="button reset-settings__button">Integrate</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer class="footer">
+			<a href="#" class="footer__link">Documentation</a>
+			<a href="#" class="footer__link">Contact support</a>
+		</footer>
+
+		<script src="./aside/progressbar.js"></script>
+		<script src="./aside/dd.min.js"></script>
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>

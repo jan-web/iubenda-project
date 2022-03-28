@@ -1,0 +1,51 @@
+.legislation {
+  padding-bottom: 50px;
+  &__from {
+  padding-top: 50px;
+  }
+  &__button {
+    background-color: inherit;
+    border: 2px solid var(--dark-grey);
+    cursor: pointer;
+    padding: 37px 0 34px ;
+    min-width: 292px;
+    font-family: inherit;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-right: 26px;
+    margin-bottom: 30px;
+    align-items: center;
+    &_require {
+      padding: 37px 0 34px 79px ;
+    }
+    &_eu {
+      background: url(../images/icon_ue_flag.svg) 15% 65%/24% no-repeat;
+      &:focus,
+      &:hover {
+        background: url(../images/icon_ue_flag_green.svg) 15% 65%/24% no-repeat
+        }
+      }
+      &_ww {
+        background: url(../images/icon_world.svg) 10% 65%/24% no-repeat;
+        &:focus,
+        &:hover {
+          background: url(../images/icon_world_green.svg) 10% 65%/24% no-repeat
+          }
+        }
+      &:focus,
+      &:hover {
+        color: #169970;
+        border-color: #169970;
+        box-shadow: 0 0 0 5px rgba(62, 207, 162, 0.2);
+
+      }
+    }
+
+
+  &__icon {
+    // height: 153px;
+    fill: red!important;
+  }
+}

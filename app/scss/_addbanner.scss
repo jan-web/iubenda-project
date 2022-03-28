@@ -1,0 +1,16 @@
+.addbanner,
+.addprivacy {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  &__ckbx-descr {
+    margin-left: 42px;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--dark-grey);
+  }
+}
+.addprivacy {
+  padding-top: 158px;
+}

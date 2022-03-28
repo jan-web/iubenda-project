@@ -1,0 +1,110 @@
+.buttonsstyle {
+  &__thems {
+    display: flex;
+    flex-wrap: wrap   ;
+  }
+  &__theme-card {
+    text-align: center;
+    margin-right: 28px;
+    outline: 0;
+
+  }
+  &__img-wrapper {
+    box-sizing: border-box;
+    position: relative;
+    border: 2px solid var(--dark-grey);
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 150px;
+    width: 320px;
+    overflow: hidden;
+    &:focus,
+    &:hover {
+      border-color: #169970;
+      box-shadow: 0 0 0 5px rgba(62, 207, 162, 0.2);
+    }
+  }
+  &__add-custom {
+    border: 2px solid var(--dark-grey);
+    border-radius: 10px;
+    height: 187px;
+    width: 320px;
+    background-color: var(--white);
+    font-size: 44px;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      border-color: #169970;
+      box-shadow: 0 0 0 5px rgba(62, 207, 162, 0.2);
+    }
+  }
+  &__theme-img {
+    position: absolute;
+    top: 41px;
+    left: 34px;
+    width: 100%;
+  }
+  &__theme-descr {
+    margin-top: 22px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  &__but-position {
+    margin-top: 83px;
+  }
+
+
+.list-unstyled, #tabs_module_fixer, .tabs_module, .tabs_underline_green, .tabs_underline {
+  padding-left: 0;
+  list-style: none;
+}
+.list-unstyled {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  li {
+    margin-right: 70px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+
+input[type=checkbox], input[type=radio] {
+  appearance: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 22px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  background-position: center;
+  background-size: 0 auto;
+  background-repeat: no-repeat;
+  transition: background 0.4s ease;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+input[type="radio"], input[type="checkbox"] {
+
+  box-sizing: border-box;
+  padding: 0;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 25px;
+}
+input[type=radio]:checked, input.radio-looking:checked {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5PdmFsIDEyPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9InNwZWMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgaWQ9ImVsZW1lbnRzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjQ2Ny4wMDAwMDAsIC0zNzk1LjAwMDAwMCkiIGZpbGw9IiMxQ0M2OTEiPiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtMTIiIGN4PSIyNDcxIiBjeT0iMzc5OSIgcj0iNCI+PC9jaXJjbGU+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
+  background-size: 6px 6px;
+}
+input[type=radio], input.radio-looking {
+  border-radius: 28px;
+}
+
+
+}

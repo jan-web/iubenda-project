@@ -1,0 +1,23 @@
+.reset-settings {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  &__row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    flex-grow: 0.5;
+    margin-left: auto;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--font-grey-dark);
+    margin-left: 20px;
+  }
+  &__button-wrapper {
+    flex-grow: 0.5;
+    // justify-content: flex-end;
+    text-align: end;
+  }
+}

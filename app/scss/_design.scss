@@ -1,0 +1,56 @@
+.design {
+  &__position {
+    margin-right: 139px;
+    padding-bottom: 50px;
+  }
+  &__thems {
+    display: flex;
+    flex-wrap: wrap   ;
+  }
+  &__theme-card {
+    text-align: center;
+    margin-right: 28px;
+    outline: 0;
+
+  }
+  &__img-wrapper {
+    box-sizing: border-box;
+    position: relative;
+    border: 2px solid var(--dark-grey);
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 187px;
+    width: 320px;
+    overflow: hidden;
+    &:focus,
+    &:hover {
+      border-color: #169970;
+      box-shadow: 0 0 0 5px rgba(62, 207, 162, 0.2);
+    }
+  }
+  &__add-custom {
+    border: 2px solid var(--dark-grey);
+    border-radius: 10px;
+    height: 187px;
+    width: 320px;
+    background-color: var(--white);
+    font-size: 44px;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      border-color: #169970;
+      box-shadow: 0 0 0 5px rgba(62, 207, 162, 0.2);
+    }
+  }
+  &__theme-img {
+    position: absolute;
+    top: 10px;
+    left: 44px;
+    width: 100%;
+  }
+  &__theme-descr {
+    margin-top: 22px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+}

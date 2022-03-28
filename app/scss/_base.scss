@@ -1,0 +1,134 @@
+:root {
+	--gutter: 30px;
+	--grey: #cccccc;
+	--light-grey: #f1f1f1;
+  --font-grey: #d8d8d8;
+	--font-grey-dark: #919191;
+	--border-grey: #e1e1e1;
+	// --dark-grey: #5e5e5e;
+	--dark-grey: #333333;
+	--white: #ffffff;
+	--sea: #e8f9f4;
+	--green: #1CC691;
+	--rose: #fff4e6;
+	--black: #000000;
+
+
+
+
+}
+
+.text-light {
+	color: var(--light-grey);
+}
+
+.text-bright_green {
+	color: var(--bright-green);
+}
+
+.text-green {
+	color: var(--green);
+}
+
+
+html {
+	font-size: 15px;
+}
+
+body {
+	font-family: "hkgrotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: var(--dark-grey);
+	margin: 0;
+  background-color: var(--light-grey);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 2060px;
+	margin: 0 auto;
+	padding: 0 74px;
+  background: var(--white);
+  border: 1px solid #D2D3D3;
+  border-bottom-color: #B9BABC;
+  border-top-color: #DFDFDF;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	&_info-rating {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	&_reset-settings {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10p
+	}
+
+}
+
+
+.wrapper {
+  border-bottom: 1px solid var(--light-grey);
+}
+.sections-wrapper {
+  padding-top: 68px;
+  padding-bottom: 100px;
+}
+
+.row {
+	margin: 0 calc(var(--gutter) / -2);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	margin: calc(var(--gutter) / 2);
+	box-sizing: border-box;
+}
+
+h1,
+.h1 {
+	font-size: 36px;
+	margin: 0 0 25px 0;
+}
+
+.close {
+	transition: all 0.5s ease;
+	position: absolute;
+	background-color: var(--grey);
+	padding: 2px 9px 7px 10px;
+	right: 10px;
+	top: 10px;
+	border-radius: 50%;
+	border: 1px solid var(--grey);
+	color: white;
+	box-shadow: -3px 1px 6px 0px rgba(0,0,0,0.1);
+	font-size: 24px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	color: var(--dark-grey);
+}
+.button {
+	font-size: 40px;
+	padding: 30px 260px;
+	border-radius: 55px;
+	color: #FFFFFF;
+	background-color: #1CC691;
+	border-color: #1CC691;
+	border: 1px solid transparent;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	cursor: pointer;
+	&:hover, &:focus {
+    color: #d9d9d9;
+		background-color: #169970;
+    border-color: #148e68;
+	}
+}

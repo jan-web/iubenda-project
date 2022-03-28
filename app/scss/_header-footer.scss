@@ -1,0 +1,23 @@
+.header {
+  text-align: center;
+  padding: 50px 0;
+  &__logo{
+    width: 334px;
+  }
+}
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 105px;
+  text-align: center;
+  &__link {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--dark-grey);
+    &:first-child {
+      margin-right: 70px;
+    }
+
+  }
+}
