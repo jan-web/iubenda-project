@@ -3,11 +3,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta
-			property="twitter:image:src"
-			content="https://mac.yarokcoach.ru/images/mac_yarokcoach_ru_tw.jpg"
-		/>
 		<title>iubenda</title>
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="icon" type="image/png" href="images/favicon.png" />
@@ -26,7 +21,7 @@
 		</header>
 		<div class="container container_info-rating">
 			<div class="wrapper">
-				<section class="info-rating">
+				<div class="info-rating">
 					<div class="row info-rating__row">
 						<div class="info-rating__info col">
 							<div class="info-rating__img">
@@ -44,13 +39,13 @@
 							<div class="progress" id="container"></div>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="wrapper">
-				<div class="sections-wrapper">
-					<section class="options row">
+				<div class="divs-wrapper">
+					<div class="options row">
 						<div class="options__tick-box col">
 							<img
 								src="./images/check.svg"
@@ -66,13 +61,13 @@
 								<span>×</span>
 							</button>
 						</div>
-					</section>
-					<section class="addbanner">
+					</div>
+					<div class="addbanner">
 						<input class="tgl tgl-light" id="cb1" type="checkbox" />
 						<label class="tgl-btn" for="cb1"></label>
 						<span class="addbanner__ckbx-descr">Add a cookie banner</span>
-					</section>
-					<section class="design row">
+					</div>
+					<div class="design row">
 						<div class="design__position col">
 							<div class="title">Position</div>
 							<select
@@ -84,11 +79,13 @@
 								<option
 									selected
 									data-image="./images/position_top.jpg"
-									value="email"
+									value="position_top"
+									label="top"
 								></option>
 								<option
 									data-image="./images/position_bottom.jpg"
-									value="faq"
+									value="position_bottom"
+									label="bottom"
 								></option>
 							</select>
 						</div>
@@ -121,8 +118,8 @@
 								</div>
 							</div>
 						</div>
-					</section>
-					<section class="legislation">
+					</div>
+					<div class="legislation">
 						<div class="title">Legislation</div>
 						<button class="legislation__button">GDPR Only</button>
 						<button class="legislation__button">CCPA Only</button>
@@ -138,8 +135,8 @@
 						>
 							World Wide
 						</button>
-					</section>
-					<section class="chkboxies">
+					</div>
+					<div class="chkboxies">
 						<div class="title">Banner buttons</div>
 						<div class="chkboxies__wrapper">
 							<input
@@ -201,15 +198,15 @@
 								><img src="./images/question.svg" alt="question-mark"
 							/></a>
 						</div>
-					</section>
-					<section class="addprivacy">
+					</div>
+					<div class="addprivacy">
 						<input class="tgl tgl-light" id="cb2" type="checkbox" />
 						<label class="tgl-btn" for="cb2"></label>
 						<span class="addprivacy__ckbx-descr"
 							>Add the privacy policy button</span
 						>
-					</section>
-					<section class="buttonsstyle">
+					</div>
+					<div class="buttonsstyle">
 						<div class="title">Button style</div>
 						<div class="buttonsstyle__thems">
 							<div class="buttonsstyle__theme-card">
@@ -243,7 +240,7 @@
 									id="automatically"
 									value="enabled"
 								/>
-								<label id="ppl_switch_label" for="automatically">Put automatically button on footer</label>
+								<label id="label_automatically" for="automatically">Put automatically button on footer</label>
 							</li>
 							<li>
 								<input
@@ -253,20 +250,20 @@
 									value="manually"
 									checked="checked"
 								/>
-								<label id="ppl_switch_label" for="manually"
+								<label id="label_manually" for="manually"
 									>Integrate button manually</label
 								>
 							</li>
 						</ul>
 
 
-					</section>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container container_reset-settings">
 			<div class="wrapper">
-				<section class="reset-settings">
+				<div class="reset-settings">
 					<div class="row reset-settings__row">
 						<div class="reset-settings__info col">
 							<div class="reset-settings__title">
@@ -277,7 +274,7 @@
 							<button type="button" class="button reset-settings__button">Integrate</button>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div>
 		</div>
 		<footer class="footer">
